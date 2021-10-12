@@ -5,7 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 // Setup enzyme's react adapter
 Enzyme.configure({ adapter: new Adapter() });
 
-window.matchMedia =
+(window as any).matchMedia =
   window.matchMedia ||
   function() {
     return {

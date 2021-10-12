@@ -1,90 +1,27 @@
 {
-  "name": "@rfg/track-order",
+  "name": "track-order-renegade",
   "version": "3.0.0",
-  "description": "Track My Order",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
   "main": "lib/index.js",
-  "author": "Usman Ghulam <usman@renegadefurniture.com>",
-  "license": "UNLICENSED",
-  "private": false,
-  "publishConfig": {
-    "registry": "http://npm.renegadefurniture.com"
-  },
   "scripts": {
-    "build": "rm -rf lib && NODE_ENV=production babel src --out-dir lib --copy-files --ignore setupTests.js,spec.js,test.js,__tests__,__test_props__,__snapshots__",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org:aftabnaveed/track-order.git"
+    "url": "git+https://github.com/usmanghulam/track-order-renegade.git"
   },
-  "keywords": [
-    "track-order",
-    "ui",
-    "component",
-    "saga"
-  ],
-  "dependencies": {},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usmanghulam/track-order-renegade/issues"
+  },
+  "homepage": "https://github.com/usmanghulam/track-order-renegade#readme",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0"
+  },
   "devDependencies": {
-    "@redux-saga/testing-utils": "^1.1.3",
-    "@rfg/trackers": "3.0.x",
-    "@types/grecaptcha": "^3.0.3",
-    "@types/react": "^17.0.28",
-    "apisauce": "^2.1.1",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-replace-object-assign": "^1.0.0",
-    "babel-preset-airbnb": "^2.4.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^3.1.2",
-    "babel-preset-stage-1": "^6.24.1",
-    "bugsnag": "^2.4.3",
-    "can-use-dom": "^0.1.0",
-    "credit-card-type": "^8.0.0",
-    "cross-env": "^5.1.4",
-    "css-loader": "^0.28.11",
-    "dotenv": "^10.0.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-flowtype": "^2.46.3",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jest": "^21.15.1",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "flow-bin": "^0.70.0",
-    "node-sass": "^4.9.3",
-    "nodemon-webpack-plugin": "^3.0.1",
-    "pre-commit": "^1.2.2",
-    "raf": "^3.4.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-numeric-input": "^2.2.3",
-    "react-scripts": "^4.0.3",
-    "react-test-renderer": "^16.3.2",
-    "reactstrap": "^8.9.0",
-    "redux-saga": "^1.1.3",
-    "sass-loader": "^6.0.7",
-    "source-map-support": "^0.5.6",
-    "webpack-node-externals": "^1.7.2"
-  },
-  "peerDependencies": {
-    "can-use-dom": "^0.1.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.6",
-    "redux": "^3.7.2",
-    "redux-saga": "^0.16.0"
+    "@babel/preset-env": "^7.15.8"
   }
 }

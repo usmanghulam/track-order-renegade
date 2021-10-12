@@ -6,6 +6,7 @@ import TrackOrderContent from '../context/trackOrderContext';
 import { trackOrder } from '../actions';
 import { MyState, MyProps } from '../types/container';
 import { Context } from '../types/context';
+import { StoreState } from '../types/reducer';
 
 class TrackOrderPage extends Component<MyProps, MyState> {
   constructor(props) {
@@ -97,7 +98,13 @@ class TrackOrderPage extends Component<MyProps, MyState> {
     );
   }
 }
-TrackOrderPage.mapStateToProps = state => ({
-	...state.TrackOrderReducer,
-});
+
+const mapStateToProps = (state: StoreState):any => {
+  return {
+    ...state.TrackOrderReducer,
+  }
+};
+export {
+  mapStateToProps,
+};
 export default TrackOrderPage;
